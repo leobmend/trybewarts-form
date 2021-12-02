@@ -64,3 +64,8 @@ main {
   flex-direction: column;
   width: 675px;
 }
+
+.family-container {
+  display: flex;
+  flex-direction: column;
+}
