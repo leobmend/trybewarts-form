@@ -62,12 +62,32 @@ main {
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 675px;
+}
+
+.options-container {
+  display: flex;
 }
 
 .family-container {
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+.tech-container {
+  width: 50%;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-container label {
+  margin: 5px;
 }
 
 form div {
