@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
+  align-items: center;
 }
 
 .header img {
@@ -43,4 +44,18 @@
   background-color: indigo;
   color: white;
   font-weight: 500;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 40px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
