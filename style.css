@@ -69,3 +69,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+form div {
+  border: solid 1px black;
+}
