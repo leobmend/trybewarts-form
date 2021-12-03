@@ -74,7 +74,29 @@ main {
 }
 
 .line-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
+}
+
+div label {
+  display: flex;
+}
+
+.labeled-btn {
+  align-self: center;
+  margin: 0 2px;
+}
+
+.half-line {
+  display: flex;
+  width: 40%;
+}
+
+.half-line select {
+  flex-grow: 1;
+  text-align: center;
 }
 
 .family-container {
@@ -104,6 +126,16 @@ main {
 
 .grade-container {
   width: 100%;
+}
+
+.agreement-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.agreement-container input {
+  margin-left: 1%;
 }
 
 form div {
