@@ -26,12 +26,14 @@
       </div>
       <div class="line-container">
         <input type="text" name="" id="input-email" placeholder="Email">
-        <select name="" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
+        <label for="house">Casa:
+          <select name="" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </label>
       </div>
       <div class="options-container">
         <div class="family-container">
@@ -79,7 +81,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="grade-container">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <input type="radio" name="rate" value=1>
         1
@@ -101,6 +103,10 @@
         9
         <input type="radio" name="rate" value=10>
         10
+      </div>
+      <div class="comment-container">
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea id="textarea" maxlength="500" rows=10 cols=30></textarea>
       </div>
     </form>
     <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" alt="Trybewarts Logo">

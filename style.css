@@ -53,6 +53,7 @@
 
 main {
   display: flex;
+  justify-content: space-around;
 }
 
 #trybewarts-forms-logo {
@@ -69,6 +70,11 @@ main {
 
 .options-container {
   display: flex;
+  width: 100%;
+}
+
+.line-container {
+  width: 100%;
 }
 
 .family-container {
@@ -88,6 +94,16 @@ main {
 
 .checkbox-container label {
   margin: 5px;
+}
+
+.comment-container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.grade-container {
+  width: 100%;
 }
 
 form div {
