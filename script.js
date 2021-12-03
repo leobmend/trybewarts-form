@@ -32,6 +32,33 @@ function onKeyCalculateCharacters(event) {
   textareaCounter.innerText = remainingCharacters;
 }
 
+function selectedHouse() {
+  const houses = document.querySelectorAll('#house option');
+  for (let index = 0; index < houses.length; index += 1) {
+    if (houses[index].selected) {
+      return houses[index].innerText;
+    }
+  }
+}
+
+function selectedFamily() {
+  const families = document.querySelectorAll('input[name="family"]');
+  for (let index = 0; index < families.length; index += 1) {
+    if (families[index].checked) {
+      return families[index].innerText;
+    }
+  }
+}
+
+function onClickShowResune() {
+  let name = document.querySelector('#input-name').value;
+  name += ' ' + document.querySelector('#input-lastname').value;
+  const email = document.querySelector("#input-email").value;
+  const house = selectedHouse();
+  const family = selectedFamily();
+}
+
+submitBtn.addEventListener('click', onClickShowResune);
 loginBtn.addEventListener('click', onClickLogin);
 textarea.addEventListener('keyup', onKeyCalculateCharacters);
 textarea.addEventListener('keydown', onKeyCalculateCharacters);
