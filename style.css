@@ -151,3 +151,11 @@ form div {
   color: white;
   font-weight: 500;
 }
+
+footer {
+  background-color: rgb(97, 97, 97);
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 800;
+}
