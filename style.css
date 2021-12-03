@@ -141,3 +141,13 @@ div label {
 form div {
   border: solid 1px black;
 }
+
+#submit-btn {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: indigo;
+  color: white;
+  font-weight: 500;
+}
