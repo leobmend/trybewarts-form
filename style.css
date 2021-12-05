@@ -160,6 +160,12 @@ footer {
   font-weight: 800;
 }
 
-#resune-container {
+#resume-container {
   display: none;
+  flex-direction: column;
+  border: solid 1px black;
+}
+
+#resume-container div {
+  border: solid 1px black;
 }

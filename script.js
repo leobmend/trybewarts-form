@@ -45,20 +45,60 @@ function selectedFamily() {
   const families = document.querySelectorAll('input[name="family"]');
   for (let index = 0; index < families.length; index += 1) {
     if (families[index].checked) {
-      return families[index].innerText;
+      return families[index].value;
     }
   }
 }
 
-function onClickShowResune() {
+function selectedSubject() {
+  const subjects = document.querySelectorAll('.subject');
+  let subjectString = ""; 
+  for (let index = 0; index < subjects.length; index += 1) {
+    if (subjects[index].checked) {
+      if (subjectString === "") {
+        subjectString = ` ${subjects[index].value}`;
+      } else {
+        subjectString += `, ${subjects[index].value}`;
+      }
+    }
+  }
+  return subjectString;
+}
+
+function selectedGrade() {
+  const grade = document.querySelectorAll('.grade');
+  for (let index = 0; index < grade.length; index += 1) {
+    if (grade[index].checked) {
+      return grade[index].value;
+    }
+  }
+}
+
+function onClickShowResume(event) {
+  event.preventDefault();
+  
   let name = document.querySelector('#input-name').value;
   name += ' ' + document.querySelector('#input-lastname').value;
   const email = document.querySelector("#input-email").value;
   const house = selectedHouse();
   const family = selectedFamily();
+  const subjects = selectedSubject();
+  const evaluation = selectedGrade();
+  const obsertations = document.querySelector('#textarea').value;
+
+  document.querySelector('#resume-name').innerText += ` ${name}`;
+  document.querySelector('#resume-email').innerText += ` ${email}`;
+  document.querySelector('#resume-casa').innerText += ` ${house}`;
+  document.querySelector('#resume-familia').innerText += ` ${family}`;
+  document.querySelector('#resume-materias').innerText += ` ${subjects}`;
+  document.querySelector('#resume-avaliacao').innerText += ` ${evaluation}`;
+  document.querySelector('#resume-observacoes').innerText += ` ${obsertations}`;
+
+  document.querySelector('#resume-container').style.display = 'flex';
+  document.querySelector('#evaluation-form').style.display = 'none';
 }
 
-submitBtn.addEventListener('click', onClickShowResune);
+submitBtn.addEventListener('click', onClickShowResume);
 loginBtn.addEventListener('click', onClickLogin);
 textarea.addEventListener('keyup', onKeyCalculateCharacters);
 textarea.addEventListener('keydown', onKeyCalculateCharacters);
