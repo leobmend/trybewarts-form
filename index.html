@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trybewarts - Satisfação</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -35,6 +38,7 @@
           </select>
         </label>
       </div>
+      <hr/>
       <div class="options-container">
         <div class="family-container">
           <label id="label-family">Qual sua família?</label>
@@ -66,6 +70,8 @@
               <input type="checkbox" class="labeled-btn subject" value="Promises" id="promises">
               Promises
             </label>
+          </div>
+          <div class="checkbox-container">
             <label for="react">
               <input type="checkbox" class="labeled-btn subject" value="React" id="react">
               React
@@ -81,6 +87,7 @@
           </div>
         </div>
       </div>
+      <hr>
       <div class="line-container">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <label for="r1">1
@@ -116,7 +123,7 @@
       </div>
       <div class="comment-container">
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" maxlength="500" rows=10 cols=30></textarea>
+        <textarea id="textarea" maxlength="500" rows=5 cols=20></textarea>
         <div id="counter">500</div>
       </div>
       <div class="agreement-container">
@@ -127,7 +134,7 @@
         <button type="submit" id="submit-btn" disabled>Enviar</button>
       </div>
     </form>
-    <div id="resume-container">
+    <div class="hidden">
       <div class="line-container" id="resume-name">Nome:</div>
       <div class="line-container" id="resume-email">Email:</div>
       <div class="line-container">

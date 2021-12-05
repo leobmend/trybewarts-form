@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Cinzel, serif;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
+  font-size: 12px;
 }
 
 .header {
@@ -12,31 +18,37 @@
 }
 
 .header img {
-  max-width: 10%;
-  padding: 0.5%;
+  max-width: 4%;
+  padding: 0.2% 0.5%;
 }
 
 .trybewarts-login {
   display: flex;
   align-items: center;
-  max-width: 40%;
+  max-width: 42%;
+  margin-right: 0.5%;
 }
 
-.trybewarts-login input {
-  padding: 8px 0;
-  min-width: 33%;
-  margin: 0 1%;
+input , select {
+  background-color: white;
+  padding: 5px 0;
   border-radius: 5px;
   border: none;
 }
 
+.trybewarts-login input {
+  min-width: 31%;
+  margin: 0 1%;
+}
+
 ::placeholder {
-  text-align: center;
+  padding-left: 5px;
+  font-size: 10px;
 }
 
 #login-btn {
   border: none;
-  padding: 8px 0;
+  padding: 5px 0;
   min-width: 33%;
   text-align: center;
   margin: 0 1%;
@@ -48,12 +60,13 @@
 
 #trybewarts-header-title {
   color: white;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #trybewarts-forms-logo {
@@ -68,6 +81,12 @@ main {
   width: 675px;
 }
 
+#evaluation-form h2 {
+  margin: 2.5% 0;
+  font-size: 22px;
+
+}
+
 .options-container {
   display: flex;
   width: 100%;
@@ -75,9 +94,18 @@ main {
 
 .line-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 8px;
+}
+
+#input-name {
+  width: 49.8%;
+}
+
+#input-lastname {
+  width: 49.8%;
 }
 
 div label {
@@ -91,7 +119,8 @@ div label {
 
 .half-line {
   display: flex;
-  width: 40%;
+  align-items: center;
+  width: 49.8%;
 }
 
 .half-line select {
@@ -99,14 +128,21 @@ div label {
   text-align: center;
 }
 
+hr {
+  width: 100%;
+  height: 2px;
+  margin: 10px;
+}
+
 .family-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: space-evenly;
+  width: 40%;
 }
 
 .tech-container {
-  width: 50%;
+  width: 60%;
 }
 
 .checkbox-container {
@@ -124,6 +160,19 @@ div label {
   width: 100%;
 }
 
+textarea {
+  background-color: white;
+  padding: 5px 0;
+  border-radius: 5px;
+  border: solid 1px black;
+}
+
+#counter {
+  position: relative;
+  top: -15px;
+  left: 96%;
+}
+
 .grade-container {
   width: 100%;
 }
@@ -131,15 +180,12 @@ div label {
 .agreement-container {
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
   width: 100%;
 }
 
 .agreement-container input {
   margin-left: 1%;
-}
-
-form div {
-  border: solid 1px black;
 }
 
 #submit-btn {
@@ -160,12 +206,14 @@ footer {
   font-weight: 800;
 }
 
-#resume-container {
+.hidden {
   display: none;
-  flex-direction: column;
-  border: solid 1px black;
 }
 
-#resume-container div {
+.resume {
+  background-color: white;
+  font-size: 22px;
   border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
 }

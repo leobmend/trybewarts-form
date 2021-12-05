@@ -50,18 +50,32 @@ function selectedFamily() {
   }
 }
 
-function selectedSubject() {
-  const subjects = document.querySelectorAll('.subject');
-  let subjectString = ""; 
+function checkedSubjects(subjects) {
+  const checkedList = [];
+
   for (let index = 0; index < subjects.length; index += 1) {
     if (subjects[index].checked) {
-      if (subjectString === "") {
-        subjectString = ` ${subjects[index].value}`;
-      } else {
-        subjectString += `, ${subjects[index].value}`;
-      }
+      checkedList.push(subjects[index]);
     }
   }
+
+  return checkedList;
+}
+
+function selectedSubject() {
+  const subjects = document.querySelectorAll('.subject');
+  let subjectString = '';
+
+  const checkedList = checkedSubjects(subjects);
+
+  for (let index = 0; index < checkedList.length; index += 1) {
+    if (subjectString === '') {
+      subjectString = ` ${checkedList[index].value}`;
+    } else {
+      subjectString += `, ${checkedList[index].value}`;
+    }
+  }
+
   return subjectString;
 }
 
@@ -74,12 +88,10 @@ function selectedGrade() {
   }
 }
 
-function onClickShowResume(event) {
-  event.preventDefault();
-  
+function resumeConstructor() {
   let name = document.querySelector('#input-name').value;
-  name += ' ' + document.querySelector('#input-lastname').value;
-  const email = document.querySelector("#input-email").value;
+  name += ` ${document.querySelector('#input-lastname').value}`;
+  const email = document.querySelector('#input-email').value;
   const house = selectedHouse();
   const family = selectedFamily();
   const subjects = selectedSubject();
@@ -93,9 +105,20 @@ function onClickShowResume(event) {
   document.querySelector('#resume-materias').innerText += ` ${subjects}`;
   document.querySelector('#resume-avaliacao').innerText += ` ${evaluation}`;
   document.querySelector('#resume-observacoes').innerText += ` ${obsertations}`;
+}
 
-  document.querySelector('#resume-container').style.display = 'flex';
-  document.querySelector('#evaluation-form').style.display = 'none';
+function onClickShowResume(event) {
+  event.preventDefault();
+  resumeConstructor();
+
+  const resume = document.querySelector('.hidden');
+  const form = document.querySelector('#evaluation-form');
+
+  form.id = '';
+  form.className = 'hidden';
+
+  resume.id = 'evaluation-form';
+  resume.className = 'resume';
 }
 
 submitBtn.addEventListener('click', onClickShowResume);
