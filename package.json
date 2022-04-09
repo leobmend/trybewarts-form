@@ -1,10 +1,9 @@
 {
   "name": "trybewarts-form",
   "version": "1.0.0",
-  "description": "Repositório pessoal derivado do projeto Trybewarts (Curso Trybe)",
+  "description": "",
   "main": "script.js",
   "scripts": {
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +17,10 @@
   },
   "homepage": "https://github.com/leobmend/trybewarts-form#readme",
   "devDependencies": {
-    "eslint": "^8.13.0",
-    "eslint-config-trybe-fundamentals": "^1.1.1"
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-trybe-fundamentals": "1.1.1",
+    "eslint-plugin-cypress": "2.11.2",
+    "eslint-plugin-import": "2.22.1"
   }
 }
