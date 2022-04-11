@@ -2,7 +2,7 @@
 
 Este formulário permite ao aluno avaliar sua experiência na escola mágica de programação *Trybewarts*. 
 
-Brincadeiras ` parte, este formulário surgiu a partir do projeto de mesmo nome, realizado durante o curso de [Desenvolvimento Web da Trybe](https://www.betrybe.com/).
+Brincadeiras à parte, este formulário surgiu a partir do projeto de mesmo nome, realizado durante o curso de [Desenvolvimento Web da Trybe](https://www.betrybe.com/).
 
 ## Projeto
 
