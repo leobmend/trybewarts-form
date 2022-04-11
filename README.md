@@ -1,8 +1,8 @@
 # Trybewarts Form :european_castle::magic_wand:
 
-Este formulário permite ao aluna avaliar sua experiência na escola mágica de programação *Trybewarts*. 
+Este formulário permite ao aluno avaliar sua experiência na escola mágica de programação *Trybewarts*. 
 
-Brincadeiras a parte, este formulário surgiu a partir do projeto de mesmo nome, realizado durante o curso de [Desenvolvimento Web da Trybe] (https://www.betrybe.com/).
+Brincadeiras ` parte, este formulário surgiu a partir do projeto de mesmo nome, realizado durante o curso de [Desenvolvimento Web da Trybe](https://www.betrybe.com/).
 
 ## Projeto
 
