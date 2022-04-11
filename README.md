@@ -4,7 +4,7 @@ Este formulário permite ao aluno avaliar sua experiência na escola mágica de 
 
 Brincadeiras à parte, este formulário surgiu a partir do projeto de mesmo nome, realizado durante o curso de [Desenvolvimento Web da Trybe](https://www.betrybe.com/).
 
-* Obs.: O projeto foi realizado em conjunto com o @ElimarLucena.
+* Obs.: O projeto foi realizado em conjunto com o [Elimar Lucena](https://github.com/ElimarLucena).
 
 ## Projeto
 
