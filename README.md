@@ -16,6 +16,10 @@ O formulário apresenta campos de *input* de texto, *radio buttons*, *checkboxes
   Teste o login **tryber@teste.com** e senha **123456**.
 </details>
 
+## Teste você mesmo!
+
+A aplicação está em produção [aqui](https://leobmend.github.io/trybewarts-form/)! Caso se interesse, meus outros projetos estão disponíveis em meu [portfolio](https://leobmend.github.io). 
+
 ## Tecnologias
 
 Durante o desenvolvimento da aplicação, foram utilizados:
